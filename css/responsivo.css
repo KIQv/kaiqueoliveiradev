@@ -1,0 +1,194 @@
+@media screen and (max-width:700px){
+    .cursor, .cursor2{
+        display: none;
+    }
+    header{
+        height: 6.25em;
+        border-bottom: 1px solid #424141;
+        position: sticky;
+    }
+    .inner-width{
+        max-width: 90%;
+        padding: 10px;
+        margin: auto;
+    }
+    .menu-toggle-btn{
+        display: block !important;
+    }
+    .menu{
+        position: fixed;
+        width: 100%;
+        max-width: 100vh;
+        background: #1B1B1B;
+        border-top: 1px solid #424141;
+        border-bottom: 1px solid #424141;
+        top: 90px;
+        right: 0;
+        display: none;
+        padding: 20px 40px;
+        margin-top: 10px;
+        box-sizing: border-box;
+    }
+    .menu::before{
+        content: "";
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-bottom: 10px solid #424141;
+        position: absolute;
+        top: -10px;
+        right: 10px;
+    }
+    .menu a{
+        display: block;
+        margin: 10px 0;
+    }
+    .menu.ativo{
+        display: block;
+        z-index: 1;
+    }
+
+    .home{
+        display: flex;
+        height: auto;
+        flex-direction: row;
+        margin-bottom: 50px;
+    }
+    .home .banner{
+        display: flex;
+        flex-direction: column-reverse;
+        height: auto;
+        margin: 0;
+    }
+    .home .banner img{
+        height: 400px;
+        margin: 16px 0;
+    }
+    .home h2{
+        font-size: 50px;
+        color: #fff;
+    }
+    .home h2 span{
+        color: #fff;
+    }
+    .home .nome{
+        margin: 10px 0 6px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+    }
+    .textHome{
+        font-size: 30px;
+        margin: 6px 0;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        color: #fff;
+    }
+    #nome2{
+        display: none;
+    }
+    #nome3{
+        display: none;
+    }
+    .redesSociais{
+        display: flex;
+        flex-direction: row;
+        margin: 16px auto 0;
+        width: 120px;
+        height: auto;
+        justify-content: space-between;
+    }
+    .portfolio{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+    .portfolio .card{
+        width: 100%;
+        height: 500px;
+    }
+    .card .overlay{
+        opacity: 1;
+    }
+    .card .overlay h2{
+        opacity: 1;
+        font-size: 55px;
+    }
+    .card .overlay p{
+        opacity: 1;
+        font-size: 25px;
+    }
+    .servicos h3{
+        font-size: 30px;
+        margin-bottom: 6px;
+    }
+    .servicos .conteudoServicos{
+        flex-direction: column;
+    }
+    .servicos .servicosCard{
+        justify-content: space-evenly;
+        margin-bottom: 36px;
+    }
+    .servicos .servicoImg{
+        margin: 0;
+        margin-left: 24px;
+    }
+    .servicos .servicosCard .cardConteudo{
+        margin-left: 12px;
+        margin-right: 24px;
+    }
+    .servicos p{
+        font-size: 20px;
+        margin-top: 6px;
+    }
+    .servicos .servicosCard .servicoNum{
+        display: none;
+    }
+    .sobre .formacao{
+        float: unset;
+        width: 100%;
+    }
+    .sobre .experiencia{
+        float: unset;
+        width: 100%;
+    }
+}
+/*///////////////////////////////////////*/
+@media screen and (max-width:550px){
+    .servicos{
+        padding: 40px 0 20px;
+    }
+    .servicos p{
+        font-size: 14px;
+    }
+    .servicos .servicoImg{
+        margin: 0;
+    }
+    .servicos .servicosCard .cardConteudo{
+        margin-left: 12px;
+        margin-right: 10px;
+    }
+    .sobre .info h2{
+        margin-left: 0;
+        margin-bottom: 23px;
+    }
+    .sobre .formacao .conteudoFormacao .infoFormacao{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+    .sobre .formacao .conteudoFormacao .infoFormacao .dataFormacao{
+        width: 100%;
+        margin: 10px 8px;
+    }
+    .sobre .experiencia .conteudoExperiencia .infoExperiencia{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+    .sobre .experiencia .conteudoExperiencia .infoExperiencia .dataExperiencia{
+        width: 100%;
+        margin: 10px 8px;
+    }
+}

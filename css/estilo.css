@@ -1,0 +1,520 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Syne:wght@400;500;600;700;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    background-color: #1B1B1B;
+    cursor: none;
+}
+.loading{
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    background-color: #1B1B1B;
+    position: absolute;
+    z-index: 999;
+}
+.loading>div{
+    height: 100px;
+    width: 100px;
+    border: 5px solid #424141;
+    border-top-color: #fff;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    border-radius: 50%;
+    animation: spin 2s infinite linear;
+}
+@keyframes spin{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.cursor{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #c6c6c6;
+    border-radius: 50%;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    background: none;
+    z-index: 99;
+}
+.cursor2{
+    position: fixed;
+    width: 8px;
+    height: 8px;
+    background-color: #c6c6c6;
+    border-radius: 50%;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    z-index: 99;
+}
+header{
+    height: 6.25em;
+    border-bottom: 1px solid #424141;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.inner-width{
+    max-width: 1200px;
+    padding: 10px;
+    margin: auto;
+}
+.logo{
+    float: left;
+}
+.logo img{
+    height: 80px;
+}
+.menu{
+    float: right;
+    display: flex;
+    align-items: center;
+    min-height: 90px;
+}
+.menu a{
+    margin-left: 10px;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Syne';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.9375em;
+    line-height: 18px;
+    padding: 10px 10px;
+    transition: 500ms ease-in;
+}
+.menu a:hover{
+    background: #fff;
+    color: #1B1B1B;
+    transform: scale(1);
+}
+.menu i{
+    margin-right: 8px;
+    font-size: 16px;
+}
+.menu-toggle-btn{
+    float: right;
+    height: 90px;
+    line-height: 90px !important;
+    color: #fff;
+    font-size: 2.625em;
+    display: none !important;
+    cursor: pointer;
+}
+.home{
+    height: 980px;
+}
+.home .banner{
+    height: 500px;
+    margin-top: 180px;
+}
+.home h2{
+    font-family: 'Syne';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 8.75em;
+    line-height: 168px;
+    text-transform: uppercase;
+    color: #fff;
+    background: none;
+}
+.home h2 span{
+    color: #000;
+    background: none;
+}
+.home .nome{
+    margin-left: 335px;
+    margin-top: -470px;
+}
+#nome2{
+    z-index: -1;
+    margin-top: -110px;
+    color: transparent;
+    -webkit-text-stroke: 0.5px rgba(255, 255, 255, 0.2);
+}
+#nome2 span{
+    color: transparent;
+    -webkit-text-stroke: 0.5px rgba(27, 27, 27, 0.2);
+}
+#nome3{
+    margin-top: -105px;
+    color: transparent;
+    -webkit-text-stroke: 0.5px rgba(255, 255, 255, 0.05);
+}
+#nome3 span{
+    color: transparent;
+    -webkit-text-stroke: 0.5px rgba(27, 27, 27, 0.1);
+}
+.textHome{
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 78px;
+    color: #000;
+    margin-left: 29%;
+    background: none;
+}
+.textHome span{
+    background: none;
+}
+.textHome .typed{
+    color: #fff;
+    background: none;
+}
+.textHome .typed2{
+    color: #fff;
+    background: none;
+}
+.textHome .typed-cursor{
+    color: #fff;
+    background: none;
+}
+.redesSociais{
+    width: 50px;
+    height: 120px;
+    margin-left: 95%;
+    margin-top: -30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.redesSociais a{
+    width: 50px;
+    height: 50px;
+    /* border: 1px solid #424141; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.redesSociais img{
+    transition: 600ms ease-in-out;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #424141;
+    padding: 5px;
+}
+.redesSociais img:hover{
+    background-color: #fff;
+}
+.portfolio{
+    width: 100%;
+    height: 500px;
+    display: flex;
+}
+.card{
+    width: 34%;
+    height: 100%;
+    margin: 0;
+    background: url(../img/img01.png) center, no-repeat;
+    background-size: cover;
+}
+.card:nth-child(2){
+    background: url(../img/img02.png) center, no-repeat;
+    background-size: cover;
+}
+.card:nth-child(3){
+    background: url(../img/img03.png) center, no-repeat;
+    background-size: cover;
+}
+.card h2{
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 78px;
+    text-transform: uppercase;
+    background: none;
+    opacity: 0;
+    transition: 1s;
+    color: transparent;
+    -webkit-text-stroke: 0.5px white;
+}
+.card .overlay{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.45);
+    opacity: 0;
+    transition: 0.3s;
+
+}
+.card .overlay p{
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 39px;
+    background: none;
+    opacity: 0;
+    transition: 1s;
+    text-align: center;
+    color: #fff;
+}
+.card:hover .overlay{
+    opacity: 1;
+}
+.card:hover .overlay p{
+    opacity: 1;
+}
+.card:hover .overlay h2{
+    opacity: 1;
+}
+.servicos{
+    width: auto;
+    height: auto;
+    color: #fff;
+    padding: 40px 0 90px;
+}
+.servicos .titulo{
+    margin-bottom: 50px;
+}
+.servicos .titulo h2{
+    font-family: 'Syne';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 48px;
+    text-transform: uppercase;
+}
+.servicos .conteudoServicos{
+    display: flex;
+    justify-content: space-around;
+}
+.servicos .servicosCard{
+    width: auto;
+    height: 200px;
+    background-color: #323232;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: 1s;
+}
+.servicos .servicoImg{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 1px solid #424141;
+    background: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px;
+    margin-right: 12px;
+    transition: 1s;
+}
+.servicos .servicoImg svg{
+    background: none;
+}
+.servicos .servicoImg svg path{
+    transition: 1s;
+    fill: #Fff;
+}
+.servicos .servicosCard:hover .servicoImg{
+    background-color: #fff;
+}
+.servicos .servicosCard:hover svg path{
+    fill: #424141;
+}
+.servicos .servicosCard .cardConteudo{
+    margin-left: 12px;
+    margin-right: 10px;
+    background: none;
+}
+.servicos .servicosCard .servicoNum{
+    background: none;
+    margin-left: 10px;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+.servicos .servicosCard .servicoNum h2{
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 70px;
+    line-height: 91px;
+    color: transparent;
+    -webkit-text-stroke: 0.5px #5a5a5a;
+    background: none;
+}
+.servicos h3{
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 31px;
+    background: none;
+}
+.servicos p{
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    background: none;
+}
+.sobre{
+    width: auto;
+    height: 820px;
+    color: #fff;
+    padding: 50px 0;
+}
+.sobre .titulo{
+    margin-bottom: 50px;
+}
+.sobre h2{
+    font-family: 'Syne';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 48px;
+    text-transform: uppercase;
+}
+.sobre .info h2{
+    margin-left: 50px;
+    margin-bottom: 12px;
+}
+.sobre .info p{
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 33px;
+    margin-top: 12px;
+}
+.sobre .formacao{
+    width: 50%;
+    float: left;
+    margin: 80px 0;
+}
+.sobre .formacao .conteudoFormacao .infoFormacao{
+    width: auto;
+    display: flex;
+    height: 60px;
+    margin: 30px 0;
+    align-items: center;
+}
+.sobre .formacao .conteudoFormacao .infoFormacao .dataFormacao{
+    display: flex;
+    align-items: center;
+    width: 134px;
+    height: 40px;
+    background-color: #232323;
+    justify-content: center;
+    margin: 0 8px 0 6px;
+}
+.sobre .formacao .conteudoFormacao .infoFormacao .dataFormacao p{
+    background-color: transparent;
+    font-family: 'Syne';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 30px;
+    margin: 0 6px;
+}
+.sobre .formacao .conteudoFormacao .infoFormacao h3{
+    font-family: 'Syne';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 30px;
+    margin-left: 8px;
+}
+.sobre .formacao .conteudoFormacao .infoFormacao p{
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    margin-left: 8px;
+}
+.sobre .experiencia{
+    width: 50%;
+    float: right;
+    margin: 80px 0;
+}
+.sobre .experiencia .conteudoExperiencia .infoExperiencia{
+    width: auto;
+    display: flex;
+    height: 60px;
+    margin: 30px 0;
+    align-items: center;
+}
+.sobre .experiencia .conteudoExperiencia .infoExperiencia .dataExperiencia{
+    display: flex;
+    align-items: center;
+    width: 134px;
+    height: 40px;
+    background-color: #232323;
+    justify-content: center;
+    margin: 0 8px 0 6px;
+}
+.sobre .experiencia .conteudoExperiencia .infoExperiencia .dataExperiencia p{
+    background-color: transparent;
+    font-family: 'Syne';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 30px;
+    margin: 0 6px;
+    text-align: center;
+}
+.sobre .experiencia .conteudoExperiencia .infoExperiencia h3{
+    font-family: 'Syne';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 30px;
+    margin-left: 8px;
+}
+.sobre .experiencia .conteudoExperiencia .infoExperiencia p{
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    margin-left: 8px;
+}
+.sobre .buttonSobre{
+    float: left;
+    width: auto;
+    height: auto;
+}
+.sobre .buttonSobre .cvButton {
+    font-family: 'Syne';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 30px;
+    width:180px;
+    height:60px;
+    color:#fff;
+    background:#232323;
+    padding: 15px;
+    transition: 1s all;
+  }
+  
+.sobre .buttonSobre .cvButton:hover {
+    background: #fff;
+    color: #1B1B1B;
+  }
+/* .sobre .skills .titulo{
+    margin-top: 80px;
+} */
