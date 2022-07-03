@@ -91,20 +91,13 @@
         display: none;
     }
     .redesSociais{
-        display: flex;
         flex-direction: row;
         margin: 16px auto 0;
         width: 120px;
         height: auto;
-        justify-content: space-between;
+        float: none;
     }
-    .portfolio{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        height: auto;
-    }
-    .portfolio .card{
+    .projetos .card{
         width: 100%;
         height: 500px;
     }
@@ -145,6 +138,9 @@
     .servicos .servicosCard .servicoNum{
         display: none;
     }
+    .sobre{
+        height: auto;
+    }
     .sobre .formacao{
         float: unset;
         width: 100%;
@@ -168,6 +164,9 @@
     .servicos .servicosCard .cardConteudo{
         margin-left: 12px;
         margin-right: 10px;
+    }
+    .sobre{
+        height: auto;
     }
     .sobre .info h2{
         margin-left: 0;

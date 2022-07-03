@@ -65,6 +65,7 @@ header{
     top: 0;
     left: 0;
     right: 0;
+    z-index: 1;
 }
 .inner-width{
     max-width: 1200px;
@@ -185,11 +186,11 @@ header{
 .redesSociais{
     width: 50px;
     height: 120px;
-    margin-left: 95%;
     margin-top: -30%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    float: right;
 }
 .redesSociais a{
     width: 50px;
@@ -209,14 +210,14 @@ header{
 .redesSociais img:hover{
     background-color: #fff;
 }
-.portfolio{
+.projetos{
     width: 100%;
     height: 500px;
     display: flex;
 }
 .card{
     width: 34%;
-    height: 100%;
+    height: 500px;
     margin: 0;
     background: url(../img/img01.png) center, no-repeat;
     background-size: cover;
@@ -226,6 +227,18 @@ header{
     background-size: cover;
 }
 .card:nth-child(3){
+    background: url(../img/img03.png) center, no-repeat;
+    background-size: cover;
+}
+.card:nth-child(4){
+    background: url(../img/img01.png) center, no-repeat;
+    background-size: cover;
+}
+.card:nth-child(5){
+    background: url(../img/img02.png) center, no-repeat;
+    background-size: cover;
+}
+.card:nth-child(6){
     background: url(../img/img03.png) center, no-repeat;
     background-size: cover;
 }
@@ -254,7 +267,7 @@ header{
     background: rgba(0, 0, 0, 0.45);
     opacity: 0;
     transition: 0.3s;
-
+    
 }
 .card .overlay p{
     font-family: 'DM Sans';
@@ -515,6 +528,52 @@ header{
     background: #fff;
     color: #1B1B1B;
   }
-/* .sobre .skills .titulo{
-    margin-top: 80px;
-} */
+.rodape{
+    width: 100%;
+    height: 380px;
+    border-top: 1px solid #424141;
+}
+.rodape .inner-width{
+    height: 100%;
+    padding: 40px 10px 26px;
+}
+.rodape .conteudoRodape{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    justify-content: space-between;
+}
+.rodape .redesSociais{
+    flex-direction: initial;
+    height: 50px;
+    width: 120px;
+    justify-content: space-between;
+    margin: 0;
+}
+.rodape .redesSociais a{
+    width: 50px;
+    height: 50px;
+    /* border: 1px solid #424141; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.rodape .redesSociais img{
+    transition: 600ms ease-in-out;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #424141;
+    padding: 5px;
+}
+.rodape .redesSociais img:hover{
+    background-color: #fff;
+}
+.rodape .conteudoRodape .direitos{
+    font-family: 'Syne';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    color: #fff;
+}
